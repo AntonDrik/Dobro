@@ -1,0 +1,15 @@
+.docs{
+  &__list{
+    grid-template-columns: 1fr !important;
+    grid-gap: 15px !important;
+  }
+  &__item{
+    line-height: 1.2;
+    padding-left: 60px;
+    &:before{
+      width: 35px;
+      height: 45px;
+      background-position: -300px -26px;
+    }
+  }
+}

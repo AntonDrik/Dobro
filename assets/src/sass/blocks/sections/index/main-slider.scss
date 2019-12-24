@@ -1,0 +1,80 @@
+.main-slider {
+    background-image: url('../img/main-bg.jpg');
+
+    &__slick {}
+
+    &__item {
+         padding: 150px 100px;
+    }
+
+    &__caption {
+         color: white;
+         margin-bottom: 20px;
+    }
+    &__btn{}
+}
+
+//-----------slick arrow
+
+.slider__prev,
+.slider__next{
+    position: absolute;
+    top: 50%;
+    border-radius: 50px;
+    border: 5px solid white;
+    display: block;
+    transform: translate(0,-50%);
+    width: 60px;
+    height: 60px;
+    z-index: 99;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 1);
+    &:hover{
+        filter: invert(29%) sepia(161%) saturate(8321%) hue-rotate(22deg) brightness(87%) contrast(125%);
+    }
+}
+
+.slider__prev{
+    left: 0;
+    background-image: url('../img/arrow-left.svg');
+}
+
+.slider__next{
+    right: 0;
+    background-image: url('../img/arrow-right.svg');
+}
+
+//----------------------
+
+//-----------slick dots
+  .slick-dots{
+      bottom: 20px;
+  }
+
+.slick-dots li button:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '';
+    background-color: #fff;
+    border: 1px solid $color-red;
+    border-radius: 25px;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before{
+    background-color: $color-red;
+    border: 1px solid white;
+    opacity: 1;
+}
+
+.slick-dotted.slick-slider{
+    margin-bottom: 0;
+}
+//-----------------------

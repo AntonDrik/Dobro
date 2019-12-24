@@ -1,0 +1,82 @@
+.about {
+
+  &__info{
+    * {
+      line-height: 1.7;
+    }
+    & img {
+      float: left;
+      width: 320px;
+      height: 225px;
+      padding-right: 20px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    h3 {
+      margin: 30px 0px;
+    }
+  }
+  &__h2-title{
+    margin: 25px 0px;
+  }
+  &__ul-1{
+    list-style: none;
+    padding-left: 40px;
+    & li {
+      position: relative;
+      padding-left: 15px;
+      &:before{
+        content: "\2022";
+        position: absolute;
+        color: $color-red;
+        left: 0px;
+      }
+    }
+  }
+  &__ul-2{
+    list-style: none;
+    padding-left: 40px;
+
+    & li{
+      list-style-type: decimal;
+      list-style-position: inside;
+      color: $color-red;
+      & span {
+        color: #000;
+      }
+    }
+  }
+  &__video{
+    border-right: none;
+    border-left: none;
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer;
+    & video{
+      width: 650px;
+    }
+    &-container{
+      position: relative;
+      bottom: 0%;
+      left: 0%;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+    }
+    &-btn-play{
+      width: 85px;
+      height: 60px;
+      background-image: url('../img/video-btn.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 99;
+      cursor: pointer;
+    }
+  }
+}

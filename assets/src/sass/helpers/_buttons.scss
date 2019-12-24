@@ -1,0 +1,30 @@
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.btn__theme-standart {
+    width: 286px;
+    background-color: $color-red;
+    color: #ffffff;
+    font-family: 'HelveticaBold';
+    font-size: 17px;
+    padding: 25px;
+    text-transform: uppercase;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+
+    &:hover,
+    &:focus {
+    	background-color: $color_btn_standart_hover;
+    }
+}

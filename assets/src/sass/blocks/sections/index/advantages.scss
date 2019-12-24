@@ -1,0 +1,48 @@
+.advantages{
+
+  &__item{
+    padding-left: 130px;
+    &:before{
+      width: 118px;
+      height: 101px;
+    }
+
+    &-1{
+      &:before{
+        background-position: -21px -107px;
+      }
+    }
+    &-2{
+      &:before{
+        background-position: -20px -355px;
+      }
+    }
+    &-3{
+      &:before{
+        background-position: -156px -107px;
+      }
+    }
+    &-4{
+      &:before{
+        background-position: -156px -355px;
+      }
+    }
+    &-5{
+      &:before{
+        background-position: -18px -233px;
+      }
+    }
+    &-6{
+      &:before{
+        background-position: -20px -477px;
+      }
+    }
+    &-7{
+      &:before{
+        background-position: -157px -233px;
+      }
+    }
+
+  }
+
+}

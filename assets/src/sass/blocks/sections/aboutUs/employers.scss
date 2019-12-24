@@ -1,0 +1,24 @@
+.employers{
+
+  &__cards{
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 120px;
+  }
+  &__img{
+  }
+  &__name,
+  &__position{
+    padding-bottom: 18px;
+    font-family: 'HelveticaBold';
+  }
+  &__name{
+    font-size: 14px;
+  }
+  &__list-item{
+    padding-left: 25px;
+  }
+  &__list-item:first-child{
+    padding-bottom: 15px;
+  }
+
+}

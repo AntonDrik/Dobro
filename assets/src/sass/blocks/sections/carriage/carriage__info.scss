@@ -1,0 +1,14 @@
+.carriage__info{
+
+}
+
+.carriage__description{
+  & p{
+    line-height: 1.7;
+    padding-bottom: 20px;
+  }
+}
+
+.carriage__gallery{
+  grid-template-columns: repeat(3, 1fr);
+}

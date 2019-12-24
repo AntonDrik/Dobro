@@ -1,0 +1,156 @@
+.widget{
+
+  &__container{
+    border: 1px solid #d0d0d0;
+    height: 100%;
+  }
+
+}
+
+.rate{
+
+  &__list{
+  }
+
+  &__item,
+  &__title{
+    padding: 10px 20px;
+  }
+
+  &__item{
+    border-top: 1px solid #d0d0d0;
+    position: relative;
+
+    &>span{
+      font-size: 14px;
+      &:first-child{
+        color: $color-red;
+        font-family: 'HelveticaBold', serif;
+      }
+      &:last-child{
+        position: absolute;
+        right: 10px;
+        font-family: 'HelveticaBold', serif;
+      }
+    }
+  }
+
+  &__title{
+    text-align: center;
+  }
+
+}
+
+.clocks{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 25px;
+
+  &__sity{
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+  }
+
+  &__time{
+    padding-top: 5px;
+    font-size: 12px;
+  }
+
+}
+
+.clock {
+  width: 115px;
+  height: 115px;
+  padding: 25px;
+  margin: 0 auto;
+  border-radius: 80px;
+  border: 5px solid black;
+  box-shadow: 20px 20px 15px #a0a0a0;
+}
+
+.clock .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 100%;
+}
+
+.clock .inner .hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  background-color: #181818;
+}
+
+.clock .inner .hand.hour {
+  height: 38px;
+  margin-top: -9px;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
+  -webkit-transform-origin: 0 27.2727272727px;
+  transform-origin: 0 9px;
+}
+
+.clock .inner .hand.minute {
+  height: 50px;
+  margin-top: -14px;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
+  -webkit-transform-origin: 0 27.2727272727px;
+  transform-origin: 0 14px;
+}
+
+.clock .inner .hand.minute::before{
+ content: "";
+ display: inherit;
+ position: inherit;
+ left: inherit;
+ background-color: inherit;
+ border-radius: 100%;
+ -webkit-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+}
+
+.clock .inner .hand.minute::before {
+ top: 39.5px;
+ width: 10px;
+ height: 10px;
+ box-shadow: -2px -2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+$clockSize: 120px;
+$clockPadding: ($clockSize / 14.4);
+$innerBorderWidth: ($clockSize / 150);
+
+.graduation{
+  display: block;
+  position: absolute;
+  top: ($innerBorderWidth - 23);
+  left: 50%;
+  width: ($clockSize / 90);
+  height: ($clockSize / 10);
+  background-color: #181818;
+  transform: rotate(0deg) translateX(-50%);
+  transform-origin: 0 ((($clockSize - ($clockPadding * 2)) / 2) - ($innerBorderWidth * 3));
+  @for $i from 1 through 12{
+    &:nth-child(#{$i}){
+      transform: rotate(#{( 30 * $i)}deg) translateX(-50%);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

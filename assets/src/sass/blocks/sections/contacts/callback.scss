@@ -1,0 +1,19 @@
+.callback{
+
+	&__form{
+		padding-bottom: 120px;
+
+		& label{
+			position: relative;
+			&:before{
+				content: '';
+				background-image: url('../img/sprite.png');
+				width: 25px;
+				height: 25px;
+				position: absolute;
+				top: -42px;
+				left: 5px;
+			}
+		}
+	}
+}

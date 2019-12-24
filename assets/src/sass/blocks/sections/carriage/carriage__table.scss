@@ -1,0 +1,26 @@
+.carriage__table{
+  padding-bottom: 120px;
+  table{
+    background-color: #fff;
+    width: 100%;
+    & tr {
+      border-bottom: 1px solid #e0e0e0;
+    }
+    & td {
+      width: 50%;
+      padding: 10px 25px 10px;
+    }
+  }
+}
+
+.table-container{
+  border: 1px solid #bfb3b3;
+}
+
+.table-title{
+  background-color: #878787;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'HelveticaBold';
+  cursor: pointer;
+}

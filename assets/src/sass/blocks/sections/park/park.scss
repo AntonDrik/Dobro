@@ -1,0 +1,33 @@
+.park{
+  padding-bottom: 120px;
+  &__grid{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr;
+  }
+  &__item{
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    cursor: pointer;
+  }
+  &__img{
+    display: flex;
+    & img{
+      height: 100%;
+    }
+  }
+  &__infobox{
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 40px;
+  }
+  &__name{
+    padding-bottom: 20px;
+    text-transform: none;
+    font-size: 18px;
+  }
+  &__info{
+    line-height: 1.5;
+  }
+}
